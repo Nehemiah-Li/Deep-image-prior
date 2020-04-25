@@ -1,0 +1,22 @@
+net: "models/mytaskM_deepImagePrior/decoding.prototxt"
+
+type: "Adam"
+test_iter: 1
+test_interval: 1000
+base_lr: 0.001
+momentum: 0.9
+
+lr_policy: "fixed"
+#gamma: 0.7
+#stepsize: 700
+
+regularization_type: "L1"
+weight_decay: 1 # 0.0005
+
+display: 100
+max_iter: 3100
+snapshot: 5000
+snapshot_prefix: "models/mytaskM_deepImagePrior/estImage_caffe"
+#snapshot_prefix: "/media/nehemiah/Elements_SE/outputNetworks/S1/estImage_caffe"
+
+solver_mode: CPU
