@@ -1,4 +1,4 @@
-net: "models/mytaskM_deepImagePrior/decoding.prototxt"
+net: "models/encoding_decoding.prototxt"
 
 type: "Adam"
 test_iter: 1
@@ -10,13 +10,12 @@ lr_policy: "fixed"
 #gamma: 0.7
 #stepsize: 700
 
-regularization_type: "L1"
-weight_decay: 1 # 0.0005
+regularization_type: "L2"
+weight_decay: 0.0005
 
 display: 100
 max_iter: 3100
 snapshot: 5000
-snapshot_prefix: "models/mytaskM_deepImagePrior/estImage_caffe"
-#snapshot_prefix: "/media/nehemiah/Elements_SE/outputNetworks/S1/estImage_caffe"
+snapshot_prefix: "models/estImage_caffe"
 
-solver_mode: CPU
+solver_mode: GPU
