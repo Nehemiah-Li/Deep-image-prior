@@ -6,9 +6,9 @@ test_interval: 1000
 base_lr: 0.001
 momentum: 0.9
 
-lr_policy: "fixed"
-#gamma: 0.7
-#stepsize: 700
+lr_policy: "step"
+gamma: 0.7
+stepsize: 700
 
 regularization_type: "L2"
 weight_decay: 0.0005
