@@ -1,7 +1,10 @@
 # Deep-image-prior
+Framework: Caffe 
+
 The code for deep image prior, which is described in [1]. 
 
 I changed some layers and the initialization method of convolutional layers.
+
 
 
 # Reference
